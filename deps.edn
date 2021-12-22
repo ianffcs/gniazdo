@@ -1,0 +1,6 @@
+{:paths    ["src"]
+ :deps     {org.clojure/clojure                          {:mvn/version "1.10.3"}
+            org.eclipse.jetty.websocket/websocket-client {:mvn/version "9.4.44.v20210927"}}
+ :jvm-opts ["-Dorg.eclipse.jetty.websocket.client.LEVEL=WARN"]
+ :aliases  {:dev {:extra-paths ["test"]
+                  :extra-deps  {http-kit/http-kit {:mvn/version "2.3.0"}}}}}
